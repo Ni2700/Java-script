@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="slider.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="hero">
+        <h1>Customer Review</h1>
+        <div class="review-box">
+            <div id="slide">
+                <div class="card">
+                    <div class="profile">
+                        <img src="images/pic1.jpg" draggable="false">
+                        <div>
+                            <h3> Aayushi</h3>
+                            <p>Wab Designer</p>
+                        </div>
+                        
+                    </div>
+                
+            
+                <p>Many people feel that  there  is limited amount of abundance,
+                    wealth, change to succeed in life. furthermore, there is soiled 
+                    beleif  that if one person succeeds, another must fail . many
+                    people  feel that there is a limited amount of abundance . 
+                </p>
+            </div>
+            <div class="card">
+                <div class="profile">
+                    <img src="images/pic2.jpg" alt="">
+                    <div>
+                        <h3>Nitin</h3>
+                        <p>Wab Designer</p>
+                    </div>
+                    
+                </div>
+            
+        
+            <p>Many people feel that  there  is limited amount of abundance,
+                wealth, change to succeed in life. furthermore, there is soiled 
+                beleif  that if one person succeeds, another must fail . many
+                people  feel that there is a limited amount of abundance . 
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="profile">
+                <img src="images/pic3.jpg" alt="">
+                <div>
+                    <h3> Kajal</h3>
+                    <p>Wab Designer</p>
+                </div>
+                
+            </div>
+        
+    
+        <p>Many people feel that  there  is limited amount of abundance,
+            wealth, change to succeed in life. furthermore, there is soiled 
+            beleif  that if one person succeeds, another must fail . many
+            people  feel that there is a limited amount of abundance . 
+        </p>
+    </div>
+
+    <div class="card">
+        <div class="profile">
+            <img src="images/pic4.jpg" alt="">
+            <div>
+                <h3> Rajat</h3>
+                <p>Wab Designer</p>
+            </div>
+            
+        </div>
+    
+
+    <p>Many people feel that  there  is limited amount of abundance,
+        wealth, change to succeed in life. furthermore, there is soiled 
+        beleif  that if one person succeeds, another must fail . many
+        people  feel that there is a limited amount of abundance . 
+    </p>
+</div>
+
+
+        </div>
+            <div class="sidebar">
+                <div class="img">
+                    <img src="images/up-arrow.png" id="uparrow" class="i1">
+                <img src="images/down-arrow.png" id="downarrow" class="i2">
+                </div>
+                
+            </div>
+          
+       </div>
+    </div>
+    
+</body>
+<script>
+    
+
+    var slide = document.getElementById("slide");
+    var uparrow = document.getElementById("uparrow");
+    var downarrow = document.getElementById("downarrow");
+    
+    
+    let x = 0;
+
+ 
+    uparrow.onclick = ()=>{
+        if(x > "-900"){
+            x = x - 300;
+            console.log(x);
+        slide.style.top = x + 'px';         
+        }
+        
+    }
+    downarrow.onclick = function(){
+        if(x < 0){
+             x = x + 300;
+        slide.style.top = x + 'px';         
+        }
+        
+    }
+
+    </script>
+</html>
